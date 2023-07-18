@@ -165,13 +165,11 @@ export const Contest = () => {
           display: 'flex',
           justifyContent: 'center',
           backgroundColor: '#f6edb5',
-          paddingTop: '48px',
+          paddingTop: '24px',
           paddingBottom: '120px',
         }}
       >
-        <Box className="jotform-riff-box">
-          <iframe src="https://form.jotform.com/231966142402047" className="jotform-riff" />
-        </Box>
+        <iframe src="https://form.jotform.com/231966142402047" className="jotform-riff" />
       </Box>
     </>
   );
