@@ -158,14 +158,20 @@ export const Contest = () => {
           </Box>
         </Box>
         {/* end main content display box */}
+      </Box>
 
-        <iframe
-          title="Rifflandia Contest Form"
-          src="jotform.html"
-          style={{
-            height: '1000px',
-          }}
-        />
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          backgroundColor: '#f6edb5',
+          paddingTop: '48px',
+          paddingBottom: '120px',
+        }}
+      >
+        <Box className="jotform-riff-box">
+          <iframe src="https://form.jotform.com/231966142402047" className="jotform-riff" />
+        </Box>
       </Box>
     </>
   );
