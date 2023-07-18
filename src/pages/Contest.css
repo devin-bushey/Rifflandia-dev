@@ -1,7 +1,7 @@
 .riff-background {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-top: 48px;
   padding-left: 100px;
   padding-bottom: 75px;
@@ -35,6 +35,24 @@
   background-position: 35% 75%;
 }
 
+.jotform-riff-box {
+  width: 752px;
+}
+
+.jotform-riff {
+  border: 0;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 900px;
+}
+
+@media only screen and (max-width: 752px) {
+  .jotform-riff-box {
+    width: 100%;
+  }
+}
+
+
 .fill-pale-pink{
   fill: rgba(239,180,210,1);
 }
@@ -62,3 +80,6 @@
 .fill-bright-pink{
   fill: rgba(236,0,140,1);
 }
+
+/* dark-blue: #055972 */
+/* pink: #ec008c */
