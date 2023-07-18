@@ -35,23 +35,12 @@
   background-position: 35% 75%;
 }
 
-.jotform-riff-box {
-  width: 752px;
-}
-
 .jotform-riff {
   border: 0;
   overflow: hidden;
   min-width: 100%;
-  min-height: 900px;
+  min-height: 920px;
 }
-
-@media only screen and (max-width: 752px) {
-  .jotform-riff-box {
-    width: 100%;
-  }
-}
-
 
 .fill-pale-pink{
   fill: rgba(239,180,210,1);
