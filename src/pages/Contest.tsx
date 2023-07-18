@@ -11,11 +11,11 @@ import heroImage from '../assets/hero_riff.jpg';
 export const Contest = () => {
   //todo: move the css to styles.css
   function HeroCenter({
-    decorative = '',
+    //decorative = '',
     title = 'Your Chance to Win a VIP Rifflandia Experience',
     subtitle = 'Make us laugh, bring us to tears, but most importantly be SEXY to win the ultimate Rifflandia party package for you and four friends!!',
   }: {
-    decorative?: String;
+    //decorative?: String;
     title?: String;
     subtitle?: String;
   }) {
