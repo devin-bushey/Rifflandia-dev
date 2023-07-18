@@ -1,0 +1,64 @@
+.riff-background {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 48px;
+  padding-left: 100px;
+  padding-bottom: 75px;
+  padding-right: 100px;
+}
+
+@font-face {
+  font-family: 'ArtusiExtraBold';
+  src: local('ArtusiExtraBold'),
+  url('../fonts/Artusi-Extrabold.ttf') format('truetype');
+}
+
+.boldTitle {
+  font-family: 'ArtusiExtraBold';
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: black;
+}
+
+.hero-center {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2;
+  text-align: center;
+  z-index: 999;
+  position: relative;
+  background-size: cover;
+  background-position: 35% 75%;
+}
+
+.fill-pale-pink{
+  fill: rgba(239,180,210,1);
+}
+
+.fill-pale-green{
+  fill: rgba(206,228,169,1);
+}
+
+.fill-bright-green{
+  fill: rgba(112,191,68,1);
+}
+
+.fill-light-orange{
+  fill: rgba(247,216,173,1);
+}
+
+.fill-dark-brown{
+  fill: rgba(53,45,42,1);
+}
+
+.fill-orange{
+  fill: rgba(250,164,26,1);
+}
+
+.fill-bright-pink{
+  fill: rgba(236,0,140,1);
+}
