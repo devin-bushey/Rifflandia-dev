@@ -1,6 +1,8 @@
 export interface Deal {
-  logoUrl: string;
+  logo: string;
   companyName: string;
   promoCode: string;
   discount: string;
+  gaClassName: string;
+  gaId: string;
 }
