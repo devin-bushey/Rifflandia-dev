@@ -19,8 +19,8 @@ export const DealCard = ({ deal }: { deal: Deal }) => {
         height: '120px',
       }}
     >
-      <Box sx={{ display: 'flex', justifyContent: 'center', paddingRight: '8px' }}>
-        <img src={deal.logo} />
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingRight: '8px' }}>
+        <img src={deal.logo} style={{ maxWidth: '90px', maxHeight: '90px' }} />
       </Box>
 
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
