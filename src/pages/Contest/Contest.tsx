@@ -4,9 +4,9 @@ import { Box, Container, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
 // Images
-import TITLE from '../assets/title.svg';
-import { ReactComponent as CHERRIES } from '../assets/cherries.svg';
-import heroImage from '../assets/hero_riff.jpg';
+import TITLE from '../../assets/title.svg';
+import { ReactComponent as CHERRIES } from '../../assets/cherries.svg';
+import heroImage from '../../assets/hero_riff.jpg';
 
 export const Contest = () => {
   //todo: move the css to styles.css
@@ -41,9 +41,9 @@ export const Contest = () => {
         <Typography
           variant="h1"
           sx={{
-            fontSize: { xs: '2xl', sm: '5xl', md: '6xl' },
+            fontSize: { xs: '4rem', sm: '4rem', md: '6rem' },
             fontWeight: 800,
-            marginTop: '10%',
+            marginTop: { xs: '30%', md: '10%' },
             fontFamily: 'ArtusiExtraBold',
             color: 'white',
           }}
@@ -53,9 +53,10 @@ export const Contest = () => {
         <Typography
           variant="h4"
           sx={{
-            fontSize: { xs: '2xl', sm: '3xl', md: '3xl' },
+            fontSize: { xs: '1.5rem', md: '2rem' },
+            marginTop: { xs: '48px', md: '12px' },
             color: 'white',
-            maxWidth: '50%',
+            maxWidth: { xs: '90%', md: '50%' },
             fontFamily: 'ArtusiExtraBold',
           }}
         >
