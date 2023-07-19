@@ -14,16 +14,20 @@ export const ExclusiveDeals = () => {
       <Box
         sx={{
           display: 'flex',
-          flex: 1,
           justifyContent: 'center',
         }}
       >
-        <Box
-          sx={{
-            borderRadius: '10px',
-          }}
-        >
-          <img style={{ width: '300px' }} src={TITLE} alt="Rifflandia Title" />
+        <Box sx={{ width: '600px' }}>
+          <Box
+            sx={{
+              marginTop: '24px',
+              marginBottom: '24px',
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
+            <img style={{ maxWidth: '300px' }} src={TITLE} alt="Rifflandia Title" />
+          </Box>
 
           <Box
             sx={{
