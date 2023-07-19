@@ -1,4 +1,4 @@
-import { Box, Container, Card, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import TITLE from '../../assets/title.svg';
 import './ExclusiveDeals.css';
 import { DealList } from './data/DealList';
