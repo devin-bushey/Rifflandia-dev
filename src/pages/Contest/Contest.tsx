@@ -149,9 +149,9 @@ export const Contest = () => {
           <div className='fullWidthCard'></div>
           <Box className="goRight">
             <Box sx={{
-              marginTop: '150px'
+              marginTop: ''
             }}>
-              <h2 className="boldTitle"> Your Ultimate Rifflandia VIP prize package includes:</h2>
+              <h2 className="boldTitleBigger"> Your Ultimate Rifflandia VIP prize package includes:</h2>
               <h5 className="boldTitle"> 
                 <ul>
                   <li>
@@ -169,15 +169,16 @@ export const Contest = () => {
                 </ul>
               </h5>
               
-              <h2 className="boldTitle"> How to Enter:</h2>
+              <h2 className="boldTitleBigger"> How to Enter:</h2>
+              <br/>
               <h4 className="boldTitle"> Create a sixty second video of what Rifflandia means to you. Be creative and show us why you deserve the ultimate party package!
               Please keep your video content G rated as we will be using the winning video on our social media. 
 
-              <br></br>
+              <br/> <br/>
 
               After that, upload your video to the form below for your chance to win! 
               Limit one entry per person. Users uploading their videos from multiple e-mail addresses will be disqualified.
-              <br></br>
+              <br/> <br/>
               </h4>
 
               <a href="#" className="boldTitle" >See full terms and conditions here</a>
