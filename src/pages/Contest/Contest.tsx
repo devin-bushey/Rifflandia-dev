@@ -2,13 +2,23 @@ import './Contest.css';
 
 import { Box, Container, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // Images
 import TITLE from '../../assets/title.svg';
 import { ReactComponent as CHERRIES } from '../../assets/cherries.svg';
 import heroImage from '../../assets/hero_riff.jpg';
+import hotel from '../../assets/hotel.jpg';
+import cocktails from '../../assets/cocktails.jpg';
+import crowd from '../../assets/crowd.jpg';
 
 export const Contest = () => {
+
+  const images = [ hotel,
+                  crowd,
+                  cocktails,
+                ];
   //todo: move the css to styles.css
   function HeroCenter({
     title = 'Your Chance to Win a VIP Rifflandia Experience',
@@ -169,7 +179,22 @@ export const Contest = () => {
                 </ul>
               </h5>
               
-              <div className="mobileOnlyHotelPic"> . </div>
+              <div className="mobileOnlyHotelPic"> 
+              <Carousel useKeyboardArrows={true} 
+                className="mobileSlider"
+                swipeable={true}
+                autoPlay={true}
+                infiniteLoop={true}
+                showIndicators={false}
+                showThumbs={false}
+              >
+                {images.map((URL, index) => (
+                  <div className="slide">
+                    <img alt="sample_file" src={URL} key={index} />
+                  </div>
+                ))}
+              </Carousel>
+              </div>
               <h2 className="boldTitleBigger"> How to Enter:</h2>
               <br/>
               <h4 className="boldTitle"> Create a sixty second video of what Rifflandia means to you. Be creative and show us why you deserve the ultimate party package!
@@ -186,8 +211,22 @@ export const Contest = () => {
             </Box>
            
           </Box>
-          
-          <div className="hotelCard"></div>
+            
+          <Carousel useKeyboardArrows={true} 
+                className="hotelCard"
+                swipeable={true}
+                autoPlay={true}
+                infiniteLoop={true}
+                showIndicators={false}
+                showThumbs={false}
+              >
+                {images.map((URL, index) => (
+                  <div className="slide">
+                    <img alt="sample_file" src={URL} key={index} />
+                  </div>
+                ))}
+              </Carousel>
+          {/* <div className="hotelCard"></div> */}
 
         </Box>{/* end main content display box */}
       </Box>
