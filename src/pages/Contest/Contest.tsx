@@ -169,6 +169,7 @@ export const Contest = () => {
                 </ul>
               </h5>
               
+              <div className="mobileOnlyHotelPic"> . </div>
               <h2 className="boldTitleBigger"> How to Enter:</h2>
               <br/>
               <h4 className="boldTitle"> Create a sixty second video of what Rifflandia means to you. Be creative and show us why you deserve the ultimate party package!
