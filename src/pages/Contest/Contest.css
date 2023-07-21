@@ -87,12 +87,14 @@
 }
 
 .hotelCard{
-  background-image: url('../../assets/hotel.jpg');
+  /* background-image: url('../../assets/hotel.jpg'); */
   background-size: cover;
-  background-color: palegreen;
+  background-color: #00aeef;
   grid-column: 1 / 4;
-  grid-row: 2 / -1;
+  grid-row: 3 / -1;
   border-radius: 15px;
+  overflow: hidden ;
+  width: 100%;
 }
 
 .jotform-riff {
@@ -144,8 +146,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #00aeef;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
     padding-top: 10%;
   }
 
@@ -165,20 +166,24 @@
   }
 
   .hotelCard{
-    background-image: url('../../assets/hotel.jpg');
+    height: fit-content;
+    /* background-image: url('../../assets/hotel.jpg'); */
     background-size: cover;
-    background-color: palegreen;
+    background-color: #00aeef;
     grid-column: 1 / -1;
     grid-row: 3 / -1;
     border-radius: 15px;
+    display: none;
   }
 
   .mobileOnlyHotelPic{
     display: block;
     margin-bottom: 10%;
-    height: 35vh;
-    background-image: url('../../assets/hotel.jpg');
-    background-size: cover;
+    /* height: 35vh; */
+  }
+
+  .mobileSlider {
+    width: 100%;
   }
 } 
 /* end media query! */
