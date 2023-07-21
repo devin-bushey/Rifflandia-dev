@@ -11,13 +11,12 @@ import heroImage from '../../assets/hero_riff.jpg';
 export const Contest = () => {
   //todo: move the css to styles.css
   function HeroCenter({
-    //decorative = '',
     title = 'Your Chance to Win a VIP Rifflandia Experience',
     subtitle = 'Make us laugh, bring us to tears, but most importantly be SEXY to win the ultimate Rifflandia party package for you and four friends!!',
   }: {
     //decorative?: String;
-    title?: String;
-    subtitle?: String;
+    title?: string;
+    subtitle?: string;
   }) {
     return (
       <Box
@@ -27,17 +26,6 @@ export const Contest = () => {
           backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
         }}
       >
-        {/* <Box
-          sx={{
-            color: "primary.500",
-            fontWeight: 600,
-            fontSize: "sm",
-            textTransform: "uppercase",
-            letterSpacing: 0.5,
-          }}
-        >
-          {decorative}
-        </Box> */}
         <Typography
           variant="h1"
           sx={{
@@ -129,8 +117,8 @@ export const Contest = () => {
         className="riff-background"
         sx={{
           textAlign: 'center',
-          paddingBottom: '24px',
-          backgroundColor: '#f6edb5',
+          paddingBottom: '0px',
+          backgroundColor: '#00AEEF'//move this into a class, have yellow be only on desktop
         }}
       >
         <Container
@@ -153,12 +141,54 @@ export const Contest = () => {
         </Container>
 
         {/* main content box */}
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-          <Box sx={{ maxWidth: '900px' }}>
-            <Title />
+        <Box className="gridContainer">
+          <Box sx={{ maxWidth: '900px',  }}>
+            {/* <Title /> */}
           </Box>
-        </Box>
-        {/* end main content display box */}
+
+          <div className='fullWidthCard'></div>
+          <Box className="goRight">
+            <Box sx={{
+              marginTop: ''
+            }}>
+              <h2 className="boldTitleBigger"> Your Ultimate Rifflandia VIP prize package includes:</h2>
+              <h5 className="boldTitle"> 
+                <ul>
+                  <li>
+                    Five VIP Rifflandia passes
+                  </li> 
+                  <li>
+                    Three nights at a five-star hotel in beautiful downtown Victoria
+                  </li>
+                  <li>
+                    Meals and drinks from our partnered local businesses
+                  </li>
+                  <li>
+                    Memories for a lifetime!
+                  </li>
+                </ul>
+              </h5>
+              
+              <h2 className="boldTitleBigger"> How to Enter:</h2>
+              <br/>
+              <h4 className="boldTitle"> Create a sixty second video of what Rifflandia means to you. Be creative and show us why you deserve the ultimate party package!
+              Please keep your video content G rated as we will be using the winning video on our social media. 
+
+              <br/> <br/>
+
+              After that, upload your video to the form below for your chance to win! 
+              Limit one entry per person. Users uploading their videos from multiple e-mail addresses will be disqualified.
+              <br/> <br/>
+              </h4>
+
+              <a href="#" className="boldTitle" >See full terms and conditions here</a>
+            </Box>
+           
+          </Box>
+          
+          <div className="hotelCard"></div>
+
+        </Box>{/* end main content display box */}
       </Box>
 
       <Box
