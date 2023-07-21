@@ -22,7 +22,7 @@ export const Contest = () => {
   //todo: move the css to styles.css
   function HeroCenter({
     title = 'Your Chance to Win a VIP Rifflandia Experience',
-    subtitle = 'Make us laugh, bring us to tears, but most importantly be SEXY to win the ultimate Rifflandia party package for you and four friends!!',
+    subtitle = 'Make us laugh, bring us to tears, but most importantly be YOURSELF to win the ultimate Rifflandia party package for you and four friends!!',
   }: {
     //decorative?: String;
     title?: string;
