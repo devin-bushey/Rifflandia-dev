@@ -23,7 +23,7 @@
   margin-bottom: 0px;
   margin-top: 0px;
   color: black;
-  font-size: 1.125em;
+  font-size: 100%;
   line-height: 1.5rem;
 }
 
@@ -32,7 +32,7 @@
   margin-bottom: 0px;
   margin-top: 0px;
   color: black;
-  font-size: 2.5em;
+  font-size: 200%;
 }
 
 .hero-center {
@@ -87,7 +87,7 @@
 }
 
 .hotelCard{
-  background-image: url('hotel.jpg');
+  background-image: url('../../assets/hotel.jpg');
   background-size: cover;
   background-color: palegreen;
   grid-column: 1 / 4;
